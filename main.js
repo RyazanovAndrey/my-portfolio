@@ -1,6 +1,7 @@
 const header = document.querySelector('.header')
 const swiperWrapper = document.querySelector('.swiper-wrapper')
 const themeBtn = document.querySelector('.theme-btn')
+const btnUp = document.querySelector('.btn-up')
 
 if(localStorage.getItem('theme') == 'dark') {
     document.body.classList.add('dark')
@@ -25,15 +26,27 @@ const sliderInfo = [
 window.addEventListener('scroll', () => {
     let currentScroll = window.scrollY
 
+    headerEffect(currentScroll)
+    showUpBtn(currentScroll)
+})
+
+createSLider(sliderInfo)
+
+function headerEffect(currentScroll) {
     if (currentScroll > 0) {
         header.classList.add('stop-header')
     } else {
         header.classList.remove('stop-header')
     }
+}
 
-})
-
-createSLider(sliderInfo)
+function showUpBtn(currentScroll) {
+    if(currentScroll > document.documentElement.clientHeight + 500) {
+        btnUp.classList.add('show-btn')
+    }else {
+        btnUp.classList.remove('show-btn')
+    }
+}
 
 function createSLider(slider) {
     slider.forEach(item => {
