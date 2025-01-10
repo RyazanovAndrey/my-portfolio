@@ -33,6 +33,7 @@
     font-size: 18px;
     color: var(--color-grey);
     transition: .3s;
+    font-weight: 300;
 
     &:hover {
         color: var(--color-dark);

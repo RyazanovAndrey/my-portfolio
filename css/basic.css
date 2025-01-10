@@ -63,10 +63,10 @@ body {
 }
 
 .dark {
-    --color-grey: #f1f1f1;
+    --color-grey: #313131;
     --color-dark: #fff;
     --color-white: #121212;
-    --color-hover-dark: #414141;
+    --color-hover-dark: #cecece;
     --header-color: black;
 }
 
