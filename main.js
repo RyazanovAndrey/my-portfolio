@@ -2,6 +2,8 @@ const header = document.querySelector('.header')
 const swiperWrapper = document.querySelector('.swiper-wrapper')
 const themeBtn = document.querySelector('.theme-btn')
 const btnUp = document.querySelector('.btn-up')
+const sectionBox = document.querySelectorAll('section')
+const linkMenu = document.querySelectorAll('.link')
 
 if(localStorage.getItem('theme') == 'dark') {
     document.body.classList.add('dark')
@@ -28,6 +30,7 @@ window.addEventListener('scroll', () => {
 
     headerEffect(currentScroll)
     showUpBtn(currentScroll)
+    activeLink(currentScroll)
 })
 
 createSLider(sliderInfo)
@@ -46,6 +49,17 @@ function showUpBtn(currentScroll) {
     }else {
         btnUp.classList.remove('show-btn')
     }
+}
+
+function activeLink(currentScroll) {
+    sectionBox.forEach(item => {
+        if(currentScroll > item.offsetTop - 700) {
+            let currentId = item.getAttribute('id')
+            console.log(currentId)
+            linkMenu.forEach(link => link.classList.remove('active'))
+            document.querySelector(`[href="#${currentId}"]`).classList.add('active')
+        }
+    })
 }
 
 function createSLider(slider) {
