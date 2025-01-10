@@ -1,0 +1,50 @@
+.contacts {
+    margin-top: 180px;
+}
+
+.contacts-wrapper {
+    display: flex;
+    border: 1px solid var(--color-grey);
+    padding: 20px;
+    border-radius: 50px;
+    column-gap: 80px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    column-gap: 15px;
+    align-items: center;
+    transition: .3s;
+    top: 0;
+
+    &:hover {
+        top: -3px;
+    }
+}
+
+.card-info {
+    color: var(--color-dark);
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #121212;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: .3s;
+}
+
+.github {
+    fill: var(--color-dark);
+    stroke: blue;
+    stroke-width: 5px;
+}
+
+.card:hover .card-icon {
+    background-color: var(--color-hover-dark);
+}

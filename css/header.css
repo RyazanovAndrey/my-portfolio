@@ -1,0 +1,44 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-block: 40px;
+    background-color: var(--color-white);
+    transition: .3s;
+    opacity: 0.9;
+    z-index: 90;
+
+    &.stop-header {
+        box-shadow: 0 0 20px var(--header-color);
+    }
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    gap: 80px;
+}
+
+.logo {
+    font-size: 23px;
+    color: var(--color-dark);
+}
+
+.link {
+    font-size: 18px;
+    color: var(--color-grey);
+    transition: .3s;
+
+    &:hover {
+        color: var(--color-dark);
+    }
+
+    &.active {
+        color: var(--color-dark);
+    }
+}

@@ -1,0 +1,28 @@
+.skills {
+    margin-top: 220px;
+}
+
+.skills-title {
+    margin-bottom: 60px;
+}
+
+.skills-head {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills-item {
+    border: 1px solid var(--color-grey);
+    padding: 20px;
+    border-radius: 50px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.sills-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+    margin-top: 30px;
+}

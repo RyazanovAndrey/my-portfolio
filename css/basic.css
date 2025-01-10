@@ -1,0 +1,83 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat';
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.container {
+    max-width: 1200px;
+    padding-inline: 15px;
+    margin: 0 auto;
+}
+
+.icon-bg {
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-dark);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+    &:hover {
+        background-color: var(--color-hover-dark);
+    }
+}
+
+.icon-bg:nth-child(1) {
+    margin-right: 12px;
+}
+
+.icon-bg:nth-child(2) {
+    margin-right: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: var(--color-dark);
+}
+
+.theme-btn {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 44px;
+    height: 44px;
+    background-color: var(--color-dark);
+    z-index: 99;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dark {
+    --color-grey: #f1f1f1;
+    --color-dark: #fff;
+    --color-white: #121212;
+    --color-hover-dark: #414141;
+    --header-color: black;
+}
+
+.sun-icon {
+    display: none;
+}
+
+.dark .moon-icon {
+    display: none;
+}
+
+.dark .sun-icon {
+    display: block;
+}
