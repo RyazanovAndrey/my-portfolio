@@ -9,3 +9,12 @@
         opacity: 1;
     }
 }
+
+@media(max-width: 768px) {
+    .contacts {
+        margin-top: 100px;
+    }
+    .contacts-info {
+        margin-top: 150px;
+    }
+}

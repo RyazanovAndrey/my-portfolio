@@ -78,3 +78,23 @@
         text-align: center;
     }
 }
+
+@media(max-width: 768px) {
+    .about-me {
+        margin-top: 150px;
+    }
+
+    .about-me-wrapper {
+        gap: 50px;
+    }
+
+    .contact-icon {
+        width: 40px;
+    }
+}
+
+@media(max-width: 576px) {
+    .btn-group {
+        font-size: 12px;
+    }
+}

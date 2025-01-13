@@ -108,3 +108,15 @@
 .swiper-btn:nth-child(2) {
     transform: translateX(20px);
 }
+
+@media(max-width: 768px) {
+    .works {
+        margin-top: 150px;
+    }
+}
+
+@media(max-width: 576px) {
+    .swiper-btn-group {
+        display: none;
+    }
+}
