@@ -1,5 +1,13 @@
 .works {
     margin-top: 240px;
+    transition: .8s;
+    transform: translateY(0);
+    opacity: 0;
+
+    &.show-section {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
 }
 
 .swiper {

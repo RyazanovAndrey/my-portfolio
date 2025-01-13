@@ -14,13 +14,25 @@
     color: var(--color-dark);
 }
 
+.home-first {
+    animation: showTitle 1s ease forwards;
+    opacity: 0;
+    animation-delay: .5s;
+}
+
 .home-last {
     margin-left: 250px;
+    animation: showTitle 1s ease forwards;
+    opacity: 0;
+    animation-delay: .8s;
 }
 
 .home-right {
     display: flex;
     align-items: center;
+    animation: showGroupTabs 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1.2s;
 }
 
 .home-btn {
@@ -64,6 +76,9 @@
     font-size: 20px;
     color: var(--color-dark);
     margin-top: 30px;
+    animation: showTitle 1s ease forwards;
+    opacity: 0;
+    animation-delay: 1s;
 }
 
 .icon-info {
@@ -71,6 +86,8 @@
     stroke: black;
     stroke-width: 1px;
 }
+
+
 
 @media(max-width: 1100px) {
     .home-content {

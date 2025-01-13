@@ -1,5 +1,6 @@
 .contacts {
     margin-top: 180px;
+    
 }
 
 .contacts-wrapper {
@@ -10,6 +11,9 @@
     padding: 20px;
     border-radius: 50px;
     gap: 30px;
+    opacity: 0;
+    animation: showTitle 1s forwards;
+    animation-delay: 1.3s;
 }
 
 .card {

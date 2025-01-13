@@ -12,10 +12,12 @@ if(localStorage.getItem('theme') == 'dark') {
     document.body.classList.add('dark')
 }
 
-
 themeBtn.addEventListener('click', addTheme)
 burgerBtn.addEventListener('click', menuDraiwer)
-window.addEventListener('scroll', allEffectScroll)
+window.addEventListener('scroll', () => {
+    allEffectScroll()
+    animateSection()
+})
 
 
 function addTheme() {
@@ -64,6 +66,16 @@ function activeLink(currentScroll) {
             let currentId = item.getAttribute('id')
             linkMenu.forEach(link => link.classList.remove('active'))
             document.querySelector(`[href="#${currentId}"]`).classList.add('active')
+        }
+    })
+}
+
+function animateSection() {
+    sectionBox.forEach(item => {
+        if(item.getBoundingClientRect().top + 200 < document.documentElement.clientHeight) {
+            item.classList.add('show-section')
+        }else {
+            item.classList.remove('show-section')
         }
     })
 }

@@ -65,6 +65,9 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transform: translateX(100%);
+    animation: showThemeBtn 1s forwards;
+    animation-delay: 1s;
 }
 
 .burger {
@@ -141,6 +144,37 @@ body {
     &.show-btn {
         opacity: 1;
         visibility: visible;
+    }
+}
+
+@keyframes showTitle{
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes showGroupTabs{
+    0% {
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes showThemeBtn {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 

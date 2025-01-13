@@ -7,6 +7,9 @@
     background-color: var(--color-white);
     transition: .3s;
     z-index: 99;
+    opacity: 0;
+    animation: showTitle 1s forwards;
+    animation-delay: 1s;
 
     &.stop-header {
         box-shadow: 0 0 20px var(--header-color);
