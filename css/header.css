@@ -41,5 +41,6 @@
 
     &.active {
         color: var(--color-dark);
+        font-weight: 600;
     }
 }
