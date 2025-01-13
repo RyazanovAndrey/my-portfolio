@@ -19,6 +19,14 @@ window.addEventListener('scroll', () => {
     animateSection()
 })
 
+linkMenu.forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelector('.active').classList.remove('active')
+        document.querySelector('.burger.active').classList.remove('active')
+    })
+})
+
+
 
 function addTheme() {
     bodyBox.classList.toggle('dark')
