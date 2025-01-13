@@ -8,6 +8,10 @@ body {
     color: var(--color-dark);
 }
 
+.stop-scroll {
+    overflow: hidden;
+}
+
 .container {
     max-width: 1200px;
     padding-inline: 15px;
@@ -78,7 +82,7 @@ body {
     background-color: var(--color-dark);
     top: calc(50% - 2px);
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .burger span:nth-child(1) {

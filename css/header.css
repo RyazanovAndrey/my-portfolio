@@ -6,7 +6,6 @@
     padding-block: 20px;
     background-color: var(--color-white);
     transition: .3s;
-    opacity: 0.9;
     z-index: 99;
 
     &.stop-header {
@@ -31,7 +30,7 @@
 
 .link {
     font-size: 18px;
-    color: var(--color-grey);
+    color: var(--color-dark);
     transition: .3s;
     font-weight: 300;
 
@@ -58,7 +57,6 @@
         display: grid;
         place-items: center;
         padding: 30px;
-        background-color: grey;
         transition: .3s;
         z-index: 66;
         opacity: 0;
@@ -67,6 +65,7 @@
         &.active {
             opacity: 1;
             visibility: visible;
+            box-shadow: 0 25px 20px var(--header-color);;
         }
     }
 

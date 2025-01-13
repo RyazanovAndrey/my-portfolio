@@ -77,6 +77,10 @@
         flex-direction: column;
         align-items: start;
     }
+
+    .home-last {
+        margin-bottom: 50px
+    }
 }
 
 @media(max-width: 768px) {
@@ -86,6 +90,9 @@
 }
 @media(max-width: 576px) {
     .home-left {
-        font-size: 40px;
+        font-size: 50px;
+    }
+    .home-last {
+        margin-left: 0;
     }
 }

@@ -5,34 +5,42 @@ const sectionBox = document.querySelectorAll('section')
 const linkMenu = document.querySelectorAll('.link')
 const burgerBtn = document.querySelector('.burger')
 const navMenu = document.querySelector('.nav-menu')
+const bodyBox = document.querySelector('body')
 
 
 if(localStorage.getItem('theme') == 'dark') {
     document.body.classList.add('dark')
 }
 
-themeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark')
+
+themeBtn.addEventListener('click', addTheme)
+burgerBtn.addEventListener('click', menuDraiwer)
+window.addEventListener('scroll', allEffectScroll)
+
+
+function addTheme() {
+    bodyBox.classList.toggle('dark')
 
     if(document.body.matches('.dark')) {
         localStorage.setItem('theme', 'dark')
     }else {
         localStorage.setItem('theme', 'light')
     }
-})
+}
 
-burgerBtn.addEventListener('click', () => {
+function menuDraiwer() {
     burgerBtn.classList.toggle('active')
     navMenu.classList.toggle('active')
-})
+    bodyBox.classList.toggle('stop-scroll')
+}
 
-window.addEventListener('scroll', () => {
+function allEffectScroll() {
     let currentScroll = window.scrollY
 
     headerEffect(currentScroll)
     showUpBtn(currentScroll)
     activeLink(currentScroll)
-})
+}
 
 function headerEffect(currentScroll) {
     if (currentScroll > 0) {
