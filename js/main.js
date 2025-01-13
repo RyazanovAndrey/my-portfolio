@@ -3,6 +3,8 @@ const themeBtn = document.querySelector('.theme-btn')
 const btnUp = document.querySelector('.btn-up')
 const sectionBox = document.querySelectorAll('section')
 const linkMenu = document.querySelectorAll('.link')
+const burgerBtn = document.querySelector('.burger')
+const navMenu = document.querySelector('.nav-menu')
 
 
 if(localStorage.getItem('theme') == 'dark') {
@@ -17,6 +19,11 @@ themeBtn.addEventListener('click', () => {
     }else {
         localStorage.setItem('theme', 'light')
     }
+})
+
+burgerBtn.addEventListener('click', () => {
+    burgerBtn.classList.toggle('active')
+    navMenu.classList.toggle('active')
 })
 
 window.addEventListener('scroll', () => {

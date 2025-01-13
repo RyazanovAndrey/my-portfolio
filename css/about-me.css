@@ -51,3 +51,22 @@
 .dark .dark-icon {
     stroke: var(--color-dark);
 }
+
+@media(max-width: 992px) {
+
+    .about-me-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .col-left {
+        text-align: center;
+    }
+
+    .btn-group {
+        justify-content: center;
+    }
+
+    .col-right {
+        text-align: center;
+    }
+}

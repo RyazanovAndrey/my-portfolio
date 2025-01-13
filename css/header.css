@@ -7,7 +7,7 @@
     background-color: var(--color-white);
     transition: .3s;
     opacity: 0.9;
-    z-index: 90;
+    z-index: 99;
 
     &.stop-header {
         box-shadow: 0 0 20px var(--header-color);
@@ -42,5 +42,36 @@
     &.active {
         color: var(--color-dark);
         font-weight: 600;
+    }
+}
+
+@media(max-width: 992px) {
+    .burger {
+        display: block;
+    }
+    .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--color-white);
+        width: 100%;
+        display: grid;
+        place-items: center;
+        padding: 30px;
+        background-color: grey;
+        transition: .3s;
+        z-index: 66;
+        opacity: 0;
+        visibility: hidden;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .menu {
+        flex-direction: column;
+        
     }
 }
