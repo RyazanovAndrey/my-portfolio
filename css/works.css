@@ -15,7 +15,6 @@
     position: relative;
     width: 370px;
     height: 210px;
-    cursor: pointer;
 }
 
 .works-slider-img {
@@ -23,10 +22,16 @@
 }
 
 .works-slider-title {
+    display: block;
     font-size: 23px;
     font-weight: 600;
     color: var(--color-dark);
     margin: 15px 0 20px;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
 }
 
 .works-slider-desc {
