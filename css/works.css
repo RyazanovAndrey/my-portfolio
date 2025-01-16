@@ -27,6 +27,7 @@
 
 .works-slider-img {
     border-radius: 20px;
+    filter: grayscale();
 }
 
 .works-slider-title {
