@@ -2,18 +2,13 @@ const projectsWrapper = document.querySelector('.projects-wrapper')
 const btnMore = document.querySelector('.btn-more')
 
 const projects = [
+    { name: '{Travel Ukraine}', url: 'https://ryazanovandrey.github.io/travel/', image: 'travel_ukr.jpg' },
     { name: '{Design Art}', url: 'https://ryazanovandrey.github.io/design/', image: 'design_art.jpg' },
     { name: '{Mstore}', url: 'https://ryazanovandrey.github.io/mstore/', image: 'mstore.jpg' },
     { name: '{FitBox}', url: 'https://ryazanovandrey.github.io/fit/', image: 'fitbox.jpg' },
     { name: '{Consult}', url: 'https://ryazanovandrey.github.io/consult/', image: 'consult.jpg' },
     { name: '{Golden-goose}', url: 'https://golden-goose-three.vercel.app/', image: 'golden.jpg"' },
     { name: '{Rentalux}', url: 'https://ryazanovandrey.github.io/rentalux/', image: 'renta.jpg' },
-    { name: '{Design Art}', url: 'https://ryazanovandrey.github.io/design/', image: 'design_art.jpg' },
-    { name: '{Mstore}', url: 'https://ryazanovandrey.github.io/mstore/', image: 'mstore.jpg' },
-    { name: '{FitBox}', url: 'https://ryazanovandrey.github.io/fit/', image: 'fitbox.jpg' },
-    { name: '{Consult}', url: 'https://ryazanovandrey.github.io/consult/', image: 'consult.jpg' },
-    { name: '{Golden-goose}', url: 'https://golden-goose-three.vercel.app/', image: 'golden.jpg"' },
-    { name: '{Rentalux}', url: 'https://ryazanovandrey.github.io/rentalux/', image: 'renta.jpg' }
 ]
 
 let firstIndex = 0
@@ -29,8 +24,7 @@ function renderProjects(firstIndex, lastIndex) {
         let newProject = `
             <div class="project">
                 <img src="./assets/images/${item.image}" alt="" class="projects-img">
-                <p class="projects-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, quo?</p>
-                <a href="${item.ur}" class="projects-link">${item.name}</a>
+                <a href="${item.url}" class="projects-link">${item.name}</a>
             </div>
         `
 
@@ -54,7 +48,7 @@ function showMore() {
         })
 
         if(lastIndex >= projects.length) {
-            btnMore.textContent = 'Close'
+            btnMore.style.display = 'none'
         }
     })
 }
