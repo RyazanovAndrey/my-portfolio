@@ -2,6 +2,7 @@ const projectsWrapper = document.querySelector('.projects-wrapper')
 const btnMore = document.querySelector('.btn-more')
 
 const projects = [
+    { name: '{Coffe Life}', url: 'https://ryazanovandrey.github.io/coffelife/', image: 'coffelife.jpg' },
     { name: '{Travel Ukraine}', url: 'https://ryazanovandrey.github.io/travel/', image: 'travel_ukr.jpg' },
     { name: '{Design Art}', url: 'https://ryazanovandrey.github.io/design/', image: 'design_art.jpg' },
     { name: '{Mstore}', url: 'https://ryazanovandrey.github.io/mstore/', image: 'mstore.jpg' },
